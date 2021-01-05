@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Student's Registration</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body onload="sendRequest()">
+        <header>
+            <img src="title.png" alt="FALL MUSIC FESTIVAL 2020">
+        </header>
+        <h2>REGISTRATION</h2>
+
+        <div id="home-grid">
+            
+            <form id="registration" onsubmit="return validateForm()" action="assign13.php" method="POST">
+                <p id="formAlert"></p>
+                <h3>ENROLL YOUR TALENT!</h3>
+                <p>Performance category</p>
+                <input type="radio" id = "solo" name="performance" value="solo" onchange="checkForDuet()">
+                <label for="solo">Solo</label><br>
+                <input type="radio" id = "duet" name="performance" value="duet" onchange="checkForDuet()">
+                <label for="duet">Duet</label><br>
+                <input type="radio" id = "concerto" name="performance" value="concerto" onchange="checkForDuet()">
+                <label for="concerto">Concerto</label><br>
+                <div id="singleForm">
+                    <p>Student</p>
+                    <input type="text" id="first_name" name="first_name" placeholder="First Name"><br>
+                    <input type="text" id="last_name" name="last_name" placeholder="Last Name"><br>
+                    <input type="text" id="student_id" name="student_id" maxlength="4" placeholder="Student ID"><br>
+                </div>
+                <div id="duetoForm"></div><br>
+                <div class="skillSlide">
+                    <p>Drag to select your skill level</p>
+                    <input type="range" min="1" max="4" value="1" class="slider" id = "skill" name = "skill" oninput="measureSkills()">
+                    <p id="skillLevel">Beginner</p>
+                </div>
+                <div class="intrumentSelect">
+                    <p>Choose an intrument</p>
+                    <select id="instrument" name="instrument">
+                        <option value="Piano">Piano</option>
+                        <option value="Voice">Voice</option>
+                        <option value="String">String</option>
+                        <option value="Organ">Organ</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="reservation">
+                    <p>Location</p>
+                    <input type="text" id="location" name="location" placeholder="Building name"><br>
+                    <input type="text" id="room" name="room" maxlength="3" placeholder="Room number"><br>
+                    <input type="time" id="time_slot" name="time_slot"><br>
+                </div>
+                <br>
+                <button type="submit" id="register" name="register">Register</button>
+                <button type="reset" id="clear" name="clear">Clear</button>
+                </form>
+                <p id="Test"></p>
+                <div class="displayArea">
+                    <table id="displayTable"></table>
+                </div>
+        </div>
+            
+
+            
+        
+        
+    </body>
+</html>

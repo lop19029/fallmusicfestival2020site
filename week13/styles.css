@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Quattrocento+Sans&display=swap');
+#formAlert{
+    color: #ff3b28;
+}
+body{
+
+    background-image: url("background.png");
+    background-color: #cccccc;
+    font-family: 'Quattrocento Sans', sans-serif;
+
+
+}
+#home-grid{
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+.displayArea{
+    margin: 10px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+h1, h2, h3{
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    color: #7C4D25;
+    background-color: #F6F6F6;
+    text-align: center;
+}
+form{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: inline-block;
+    text-align: center;
+    background-color: #F6F6F6;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.2rem;
+}
+input{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.3rem;
+}
+select{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.3rem;
+}
+#skillLevel{
+    color: #FF6A26;
+}
+button{
+	background-color:#FF6A26;
+	border-radius:28px;
+	border:1px solid #FF9E4B;
+	display:inline-block;
+	cursor:pointer;
+	color:#F6F6F6;
+    font-family: 'Quattrocento Sans', sans-serif;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+    margin-bottom: 5px;
+    margin-top: 5px;}
+button:hover{
+    border:1px solid #FFCE61;
+    background-color:#F6F6F6;
+    color: #7C4D25;}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: center;
+    padding: 8px;}
+td{
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.2rem;
+
+}
+th{
+font-family: 'Arvo', serif;
+font-size: 1.3em;
+font-weight: 400;}
+tr{background-color: #F6F6F6; color: #FF6A26;}
+tr:nth-child(even) {background-color:#FF9E4B; color: #F6F6F6;}
+   
+#anouncement{
+    background-color: #F6F6F6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
