@@ -1,0 +1,1 @@
+In this directory the web page will create a document called data.json if it doesn't exists.
